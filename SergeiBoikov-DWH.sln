@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1209
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "SergeiBoikov-DWH", "SergeiBoikov-DWH\SergeiBoikov-DWH.sqlproj", "{EC5C4635-B491-45C7-964C-54292ABDF0DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC5C4635-B491-45C7-964C-54292ABDF0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC5C4635-B491-45C7-964C-54292ABDF0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC5C4635-B491-45C7-964C-54292ABDF0DD}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{EC5C4635-B491-45C7-964C-54292ABDF0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC5C4635-B491-45C7-964C-54292ABDF0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC5C4635-B491-45C7-964C-54292ABDF0DD}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B95503AD-9158-4498-8D08-76C61F53B1D2}
+	EndGlobalSection
+EndGlobal
