@@ -3,6 +3,7 @@
     [Date]          DATE           NULL,
     [Latitude]      DECIMAL(5,3)   NULL,
     [Longitude]     DECIMAL(5,3)   NULL,
+    [Location]      GEOGRAPHY      NULL,
     [Count]         INT            NULL,
     [sysCreatedAt]  DATETIME       DEFAULT (getutcdate()) NULL,
     [sysChangedAt]  DATETIME       DEFAULT (getutcdate()) NULL,
