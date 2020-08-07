@@ -1,14 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <Name>SergeiBoikov_DWH</Name>
+    <Name>SergeiBoikov-DWH</Name>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
-    <ProjectGuid>{ec5c4635-b491-45c7-964c-54292abdf0dd}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <ProjectGuid>{bb3b2e7e-218a-42fb-ae7f-ab02405a588a}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql150DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -17,7 +16,7 @@
     <ModelCollation>1033, CI</ModelCollation>
     <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
     <DeployToDatabase>True</DeployToDatabase>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <TargetLanguage>CS</TargetLanguage>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <SqlServerVerification>False</SqlServerVerification>
@@ -57,10 +56,35 @@
   <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
   <ItemGroup>
     <Folder Include="Properties" />
+    <Folder Include="Security" />
+    <Folder Include="dwh" />
+    <Folder Include="staging" />
+    <Folder Include="datamart" />
+    <Folder Include="dwh\Tables" />
+    <Folder Include="dwh\Stored Procedures" />
+    <Folder Include="datamart\Views" />
+    <Folder Include="staging\Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="staging.sql" />
-    <Build Include="dwh.sql" />
-    <Build Include="datamart.sql" />
+    <Build Include="Security\datamart.sql" />
+    <Build Include="Security\dwh.sql" />
+    <Build Include="dwh\Stored Procedures\usp_DimDate_Populate.sql" />
+    <Build Include="dwh\Tables\DimDate.sql" />
+    <Build Include="dwh\Tables\DimLocation.sql" />
+    <Build Include="dwh\Tables\DimStatus.sql" />
+    <Build Include="dwh\Tables\FactCovid.sql" />
+    <Build Include="datamart\Views\vw_DimDate.sql" />
+    <Build Include="staging\Tables\Covid_untyped.sql" />
+    <Build Include="staging\Tables\Covid_typed.sql" />
+    <Build Include="staging\Tables\Covid_aggregated.sql" />
+    <Build Include="datamart\Views\vw_DimStatus.sql" />
+    <Build Include="datamart\Views\vw_DimLocation.sql" />
+    <Build Include="datamart\Views\vw_FactCovid.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Security\staging.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="SergeiBoikov-DWH.refactorlog" />
   </ItemGroup>
 </Project>
