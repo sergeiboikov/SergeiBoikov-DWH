@@ -3,4 +3,5 @@ WITH SCHEMABINDING
 AS
 (SELECT [DimStatusKey]
        ,[StatusName]
+       ,[StatusCode]
 FROM [dwh].[DimStatus]);
