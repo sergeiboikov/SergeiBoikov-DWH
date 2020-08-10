@@ -76,7 +76,6 @@
     <Build Include="datamart\Views\vw_DimDate.sql" />
     <Build Include="staging\Tables\Covid_untyped.sql" />
     <Build Include="staging\Tables\Covid_typed.sql" />
-    <Build Include="staging\Tables\Covid_aggregated.sql" />
     <Build Include="datamart\Views\vw_DimStatus.sql" />
     <Build Include="datamart\Views\vw_DimLocation.sql" />
     <Build Include="datamart\Views\vw_FactCovid.sql" />

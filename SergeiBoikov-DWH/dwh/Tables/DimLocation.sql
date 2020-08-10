@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dwh].[DimLocation] (
     [DimLocationKey]  BIGINT            IDENTITY (1, 1) NOT NULL,
-    [Location]        GEOGRAPHY                         NOT NULL,
+    [Latitude]        DECIMAL(5,3)   NOT NULL,
+    [Longitude]       DECIMAL(5,3)   NOT NULL,
     [sysCreatedAt]    DATETIME       DEFAULT (getutcdate()) NULL,
     [sysChangedAt]    DATETIME       DEFAULT (getutcdate()) NULL,
     [sysCreatedBy]    INT            DEFAULT ((-1)) NULL,

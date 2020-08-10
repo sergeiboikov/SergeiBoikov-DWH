@@ -2,5 +2,6 @@
 WITH SCHEMABINDING
 AS
 (SELECT [DimLocationKey]
-       ,[Location]
+       ,[Latitude]
+       ,[Longitude]
 FROM [dwh].[DimLocation]);
