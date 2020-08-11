@@ -4,10 +4,10 @@
     [DimStatusKey]      INT      NOT NULL,
     [DimLocationKey]    BIGINT   NOT NULL,
     [CovidCount]        INT      NULL,
-    [sysCreatedAt]    DATETIME DEFAULT (getutcdate()) NULL,
-    [sysChangedAt]    DATETIME DEFAULT (getutcdate()) NULL,
-    [sysCreatedBy]    INT      DEFAULT ((-1)) NULL,
-    [sysChangedBy]    INT      DEFAULT ((-1)) NULL,
+    [sysCreatedAt] DATETIME       CONSTRAINT [DF_FactCovid_sysCreatedAt] DEFAULT (getutcdate()) NULL,
+    [sysChangedAt] DATETIME       CONSTRAINT [DF_FactCovid_sysChangedAt] DEFAULT (getutcdate()) NULL,
+    [sysCreatedBy] INT            CONSTRAINT [DF_FactCovid_sysCreatedBy] DEFAULT ((-1)) NULL,
+    [sysChangedBy] INT            CONSTRAINT [DF_FactCovid_sysChangedBy] DEFAULT ((-1)) NULL,
     CONSTRAINT [PK_FactCovid] PRIMARY KEY CLUSTERED ([FactCovidKey] ASC)
 );
 
