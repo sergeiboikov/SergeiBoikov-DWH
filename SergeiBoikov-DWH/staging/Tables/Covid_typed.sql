@@ -1,5 +1,5 @@
 ﻿CREATE TABLE [staging].[Covid_typed] (
-    [Status]        TINYINT        NOT NULL,
+    [Status]        INT            NOT NULL,
     [Date]          DATE           NOT NULL,
     [Latitude]      DECIMAL(5,3)   NOT NULL,
     [Longitude]     DECIMAL(5,3)   NOT NULL,
